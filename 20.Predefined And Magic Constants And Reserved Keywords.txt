@@ -1,0 +1,18 @@
+
+PHP Predefined Constants [Case Sensitive]
+	PHP_UNAME();          <-display informations about the OS that I am running php on.}
+	PHP_VERSION           <-The actuall verion of php
+	PHP_OS_FAMILY         <-This constant returns the family of the operating system. It can have values like "Windows," "BSD," "Linux," and so on.
+	PHP_INT_MAX 		  <-This constant represents the maximum value for an integer on your system. It varies depending on the platform (32-bit or 64-bit).
+	DEFAULT_INCLUDE_PATH  <-This constant contains a list of directories that PHP searches for when including files. It is a string representing the default 						 include path.
+
+Magic Constants [Case Insensitive]
+	__LINE__              <-This magic constant returns the current line number in the script where it is used.
+	__FILE__              <-returns the full path and filename of the script. It's helpful for getting the absolute path to the current script.
+	__DIR__               <-This magic constant provides the directory of the script. It returns the directory path of the current file.
+
+Reserved Keywords 
+	break                 <-is used to exit from a loop (e.g., for, while, do...while) or a switch statement prematurely.
+	clone                 <-is used to create a shallow copy of an object. It duplicates the object's properties and references, creating a new object with the same values.
+
+

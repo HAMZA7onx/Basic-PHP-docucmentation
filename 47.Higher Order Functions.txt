@@ -1,0 +1,25 @@
+HIGHER ORDER FUNCTION IS A FUNCTION THAT ACCEPT AS ANOTHER FUNCTION AS A PARAMETRE.
+EXAMPLE: 
+
+<?php
+    $nums = [1, 2, 3, 4, 5];
+
+    function add_one($item) {
+        return $item + 1;
+    }
+
+    $arr = array_map('add_one', $nums);
+
+    echo '<pre>';
+    print_r($arr);
+    echo '</pre>';
+?>
+OUPUT: 
+    Array
+    (
+        [0] => 2
+        [1] => 3
+        [2] => 4
+        [3] => 5
+        [4] => 6
+    )

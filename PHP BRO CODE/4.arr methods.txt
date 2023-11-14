@@ -1,0 +1,7 @@
+$arr = []; 
+array_push($arr, 22);   <- add ele at the end of the array
+array_pop($arr);    	<- remove the last ele from the array
+array_shift($arr);      <- remvoe the first ele from the array
+array_unshift($arr);    <- add ele the beginning of the array
+array_reverse($arr);    <- reversing an array, But this function return a new array which means it doesn't affect the original array.
+		           To get the array must assign it into a new variable.

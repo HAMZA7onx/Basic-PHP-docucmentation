@@ -1,0 +1,40 @@
+
+$_GET and $_POST handle name of the inputs form as a key and the entered value as a value.
+
+
+<label> instead <div> is better.
+ the <label> tag in HTML is used to provide a description or label for form inputs (such as text fields, checkboxes, radio buttons, etc.).
+ It serves to associate a text label with a specific input element, making it clear what the input element is for
+....................................................................................................................
+
+
+<form action="index.php" method="POST">
+    <label >Username:</label><br>
+    <input type="text" name="username" placeholder="Enter Your Username"><br>
+    <label >Password:</label><br>
+    <input type="password" name="password" placeholder="Enter Your Password"><br>
+    <button type="submit" name="login" value="LOG">Log</button>
+</form>
+
+<?php
+    print '<pre>'; 
+    print_r($_POST);
+    print '</pre>'; 
+
+    print '<br>'; 
+
+    if (isset($_POST['login'])) {
+        $username = $_POST['username'];
+        $password = $_POST['password'];
+
+        if (empty($username)) {
+            echo 'Username is empty <br>';
+        }elseif (empty($password)) {
+            echo 'Password is empty <br>';
+        }elseif ($username === 'hmz' && $password === '0007') {
+            echo 'Valid Password <br>';
+        }else {
+            echo 'Invalid Password, Try Again <br>';
+        }
+    }
+?>

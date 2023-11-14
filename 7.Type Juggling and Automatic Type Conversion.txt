@@ -1,0 +1,11 @@
+<?php 
+    echo True;         // 1
+    echo True + True;  // 2
+    echo True + False; // 1
+    echo '3' + '2';    // 5     You can sum string numbers
+    echo 'a' + 'b';    // error You can't sum string letters
+    echo 'a' + 7;      // Uncaught TypeError: Unsupported operand types
+    echo 5 + '5onsnd'; // 10 , Warning: A non-numeric value encountered
+    echo 5 + 's5';     // Uncaught TypeError: Unsupported operand types
+    echo 2 + 3.3       // 5.3
+?> 

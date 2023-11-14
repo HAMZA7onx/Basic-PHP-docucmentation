@@ -1,0 +1,44 @@
+----------------------------------
+<?php
+    $arr = [1, 2, 'f']; 
+    print_r( $arr);
+    echo '<br>';
+    var_dump($arr); 
+?>
+OUPUT:
+Array ( [0] => 1 [1] => 2 [2] => f )
+array(3) { [0]=> int(1) [1]=> int(2) [2]=> string(1) "f" }
+----------------------------------
+
+
+NOW WE GONNA ADD HTML <pre> CODE: 
+
+
+----------------------------------
+<?php
+    echo '<pre>';
+
+    $arr = [1, 2, 'f']; 
+    print_r( $arr);
+    echo '<br>';
+    var_dump($arr); 
+
+    echo '</pre>';
+?>
+OUPUT: 
+Array
+(
+    [0] => 1
+    [1] => 2
+    [2] => f
+)
+
+array(3) {
+  [0]=>
+  int(1)
+  [1]=>
+  int(2)
+  [2]=>
+  string(1) "f"
+}
+----------------------------------

@@ -1,0 +1,28 @@
+In General, An Anonymous function is a function that we call one time, Or multiple times setting that anonymous function to a variable.
+
+-------------Calling Anonymous Function 1 time---------------------------
+<?php
+    (function($a, $b) {
+        echo $a + $b;
+    })(1, 2);
+?>
+OUTPUT: 
+3
+-------------------------------------------------------------------
+
+------------- Calling Anonymous Function Multiple Times -------------
+<?php
+    $sum = function($a, $b):int {
+        return $a + $b;
+    };
+
+    echo $sum(1.1, 2); 
+    echo gettype($sum(1.1, 2));
+?>
+OUTPUT: 
+3
+integer
+-------------------------------------------------------------------
+
+------------- Controlling the type of The Returned value of Anonymous Function -------------
+If the anonymous function is net assigned into a variale, We can controll its returned value, If it is Then We can Do it.

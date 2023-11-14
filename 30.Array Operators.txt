@@ -1,0 +1,10 @@
+
+Array Operations 
+- Deal With Arrays 
+
+	+     => Union
+	==    => Equal     => Same Key And Same Value 
+	!=    => Not Equal => Not Equal 
+	<>    => Not Equal => Not Equal 
+	===   => Identical => Same Key And Same Value, Same Order, Same Type Of values, for keys works as strict operator.
+	!==   => Not Identical 

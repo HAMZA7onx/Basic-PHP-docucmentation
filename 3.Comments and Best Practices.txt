@@ -1,0 +1,5 @@
+// We have 3 ways to comment: 
+
+//    <- First Way
+#     <- Second Way
+/* */ <- Third Way

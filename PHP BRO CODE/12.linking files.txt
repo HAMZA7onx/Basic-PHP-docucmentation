@@ -1,0 +1,3 @@
+header('Location: home.php'); <- you can access into the previous variables only using sessions unlike include and require functions.
+include('home.php');          <-
+require('home.php');	      <-

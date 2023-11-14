@@ -1,0 +1,7 @@
+<?php 
+	$nums = [1, 2, 3, 4];
+	$arr = array_map(function($item) { return $item + 10;}, $nums);
+?>										|
+                                        | 
+                                        | 
+                                High Order Function 

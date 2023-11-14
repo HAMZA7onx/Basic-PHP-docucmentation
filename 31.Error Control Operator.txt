@@ -1,0 +1,42 @@
+
+Error Control Operator 
+- Control The Errors 
+
+@ 
+- Variables 
+- Files 
+- Include 
+
+
+
+`exit()` and `die()` functions both of them used to End the execution of a program: 
+// Situation 1:
+<?php
+    // $a = 10; 
+    $b = @$a || die("EOP");
+    echo $b; 
+    echo '<br>';
+    echo 'HAMZA';
+?> 
+OUTPUT: 
+EOP
+
+// Situation 2: 
+<?php
+    $a = 10; 
+    $b = @$a || die("EOP");
+    echo $b; 
+    echo '<br>';
+    echo 'HAMZA';
+?> 
+OUTPUT: 
+10
+HAMZA
+
+
+=>@$a  @symbole means if that variable wasn't declared consider it nothing.
+	So we can set that symbole before any function or variable that it possible not exist: 
+	@$name
+	@file("file.txt"); 
+	@include("code.php");
+=> die("END") / exit("END");

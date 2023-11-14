@@ -1,0 +1,29 @@
+-----------------------------------------------------------------
+<?php 
+    $string = "This is some text.\nThis is on a new line.";
+    echo $string;
+?>
+OUTPUT:
+	This is some text.This is on a new line.
+
+-----------------------------------------------------------------
+<?php 
+    $string = "This is some text.\nThis is on a new line.";
+    $convertedString = nl2br($string);
+    echo $convertedString;
+?>
+OUTPUT:
+	This is some text.
+	This is on a new line.
+
+-----------------------------------------------------------------
+<?php 
+    echo nl2br("Hello PHP
+    ok there is no 
+    problem"); 
+?>
+OUTPUT:
+	Hello PHP
+	ok there is no 
+	problem"
+-----------------------------------------------------------------

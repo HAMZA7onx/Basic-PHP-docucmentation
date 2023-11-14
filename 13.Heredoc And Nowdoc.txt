@@ -1,0 +1,47 @@
+<?php 
+    $name = 'Hamza'; 
+
+    // Heredoc 
+    echo <<<"HERE"
+    Hello PHP 
+    Special Characters $$$ ' ' ' """"" \\\\ 
+    Hello My Name Is $name 
+    HERE; 
+
+    echo '<br>'; 
+
+    // Nowdoc 
+    echo <<<'NOW'
+    Hello PHP 
+    Special Characters $$$ ' ' ' """"" \\\\ 
+    Hello My Name Is $name 
+    NOW; 
+?>
+OUTPUT: 
+Hello PHP Special Characters $$$ ' ' ' """"" \\ Hello My Name Is Hamza
+Hello PHP Special Characters $$$ ' ' ' """"" \\\\ Hello My Name Is $name
+
+
+
+
+
+
+
+Note: // 2 ways to represent Heredoc (Double Quotes)===> "HERE"
+                                     (Nothing)      ===>  HERE  
+
+      // Nowdoc  ===> 'NOW' <- (Single Quotes is necessary)
+
+.Heredoc: You still have access to your variables
+.Nowdoc : Everything is a string 
+
+
+VERY IMPORTANT: 
+
+echo <<< HERE<--------------- <Should there is no space after The heredoc or nowdoc:
+    <body>
+        <div>title</div>  
+    </body>
+    HERE;
+     | 
+    herdoc or nowdow must should not depass the level of the content before it, Which is in that case the body format.

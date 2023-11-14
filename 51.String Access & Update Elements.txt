@@ -1,0 +1,46 @@
+String: 
+	String is An Array of Characters 
+	Access Elements By Index 
+	Negative Index Are Allowed 
+
+Update Elements: 
+	Update Current Elements
+	Add New Elements
+
+Search: 
+	Single Byte and Multi-Byte 
+
+
+---str_split() function-------------------------------
+<?php
+	$name = "hamza"; 
+	foreach(str_split($name) as $char) {
+		echo "$char <br>";
+	}
+?>
+OUPUT: 
+h 
+a 
+m 
+z 
+a
+
+---explode function ---------------------
+<?php
+	$name = "Hamza Meski"; 
+	echo '<pre>';
+	print_r(explode(' ',$name));
+?>
+OUTPUT: 
+Array
+(
+    [0] => Hamza
+    [1] => Meski
+)
+
+
+---Accessing Characters in a string -----
+	$name = "hamza"; 
+	$name[-1] = 'A';
+	echo $name[-1];                // A
+	echo $name[strlen($name) - 1]; // A

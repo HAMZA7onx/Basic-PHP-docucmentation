@@ -1,0 +1,116 @@
+. Array: 
+= Array with Keys
+= Array without keys 
+= Array with one Key 
+= Array Value Override
+(1)----------------------
+To print an array we use print_r() or var_dumb() functions, echo doesn't display structured data type.
+
+
+(2)----------------------
+<?php
+    $arr = [1, 2, 'f']; 
+    print_r( $arr);
+    echo '<br>';
+    var_dump($arr); 
+    echo  '<br>'; 
+    echo $arr;
+?>
+OUTPUT: 
+Array ( [0] => 1 [1] => 2 [2] => f )                                            <-print_r()
+array(3) { [0]=> int(1) [1]=> int(2) [2]=> string(1) "f" }                      <-var_dumb()
+Warning: Array to string conversion in C:\xampp\htdocs\TEST\code.php on line 7  <-echo 
+Array
+----------------------
+
+
+(3)-----Keys & Values----
+<?php
+    echo '<pre>';
+
+    $arr = [1, 2, 'x' => 'f', 3]; 
+    print_r( $arr);
+
+    echo '</pre>';
+?>
+OUTPUT: 
+Array
+(
+    [0] => 1
+    [1] => 2
+    [x] => f <-------We see here that index/key is x 
+    [2] => 3 <-------And here while there is no key it continues the index ordering of $arr
+)
+
+(4)----------------------
+<?php
+    echo '<pre>';
+
+    $arr = [3 => 'a', 2 => 'b', 1 => 'a', 'd']; 
+    print_r( $arr);
+
+    echo '</pre>';
+?>
+OUPUT: 
+Array
+(
+    [3] => a
+    [2] => b
+    [1] => a
+    [4] => d <- 'a' takes an index based on the indexes the I set previously.
+)
+
+(5)-----Overwriting the value of indexes-----
+<?php
+    echo '<pre>';
+
+    $arr = [1 => 'a', True => 'A', False => 'C', '1' => 'D', 3 => 'b']; 
+    print_r($arr);
+
+    echo '</pre>';
+?>
+OUPUT: 
+Array
+(
+    [1] => D
+    [0] => C
+    [3] => b
+)
+
+
+NOTE: '1' -> overwrite -> True -> overwrite -> 1
+
+(6)-----Nested Arrays-------------------------
+<?php
+    echo '<pre>';
+
+    $arr = [
+        1, 
+        'array' => [
+            4, 
+            5, 
+            'deep' => [
+                'deeper': -100;
+            ]
+        ]
+    ]; 
+    print_r( $arr);
+
+    echo '</pre>';
+?>
+OUPUT: 
+Array
+(
+    [0] => 1
+    [array] => Array
+        (
+            [0] => 4
+            [1] => 5
+            [deep] => Array
+                (
+                    [deeper] => -100
+                )
+
+        )
+
+)

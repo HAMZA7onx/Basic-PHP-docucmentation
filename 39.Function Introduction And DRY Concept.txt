@@ -1,0 +1,9 @@
+<?php
+    function hey($birthYear) {
+        return 2023 - $birthYear;
+    }
+
+    echo "My Name Is hamza I am ".hey(2001)." Years Old";
+?>
+OUTPUT: 
+My Name Is hamza I am 22 Years Old

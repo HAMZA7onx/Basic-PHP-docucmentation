@@ -1,0 +1,28 @@
+<?php
+    $i = 0; 
+    while ($i < 10) :
+        print("$i<br>"); 
+        $i++; 
+    endwhile;
+?>
+
+<?php
+    $i = 0;
+    while ($i < 10) {
+        print("$i<br>"); 
+        $i++; 
+    }
+?>
+
+For loop: 
+<?php 
+    $i = 0; 
+    for (;;) {
+        if ($i < 4) {
+            echo "$i<br>";
+        }else {
+            break;
+        }
+        ++$i;
+    }
+?>

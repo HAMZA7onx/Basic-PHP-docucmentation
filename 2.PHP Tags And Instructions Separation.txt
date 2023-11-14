@@ -1,0 +1,16 @@
+<?php ...  ?>
+  |        |  
+ Start    End 
+ Tag      Tag 
+
+---------------------------
+PHP Example:
+<?php 
+    echo 'string';
+    print 'string'; 
+?> 
+
+So we can use echo or print both of them to print data 
+--------------------------- 
+<?= 'We Love PHP';?>
+--------------------------- 

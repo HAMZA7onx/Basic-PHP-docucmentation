@@ -1,0 +1,10 @@
+
+<?php  
+    //Case 1:
+    $email = "hamzameski@gmail.com";
+    echo filter_var($email, FILTER_VALIDATE_EMAIL);  // hamzameski@gmail.com
+
+    //Case 2: 
+    $email = "hamza meski@gmail.com";
+    echo !filter_var($email, FILTER_VALIDATE_EMAIL); // 1
+?>

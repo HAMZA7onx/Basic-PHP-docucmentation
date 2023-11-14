@@ -1,0 +1,6 @@
+- PHP predefined Constants
+- Compile Time vs Runtime 
+- List of Reserved Words
+- How does PHP Compare strings with comparison Operators?
+- Strict mode in PHP 
+- Single-Byte and Multi-Byte

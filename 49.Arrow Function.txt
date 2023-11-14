@@ -1,0 +1,25 @@
+ARROW FUNCTION: 
+	Short Syntaxe For Anonymous Function 
+	Automatic Use Variables From Parent Scope
+
+Syntaxe: 
+	Function Replace With fn 
+	No Need For Curly Braces 
+	Return Is Omitted 
+
+EXAMPLEs:
+EX1:
+<?php
+	$add = fn($a, $b) => $a + $b;
+	echo $add(3, 5); // 8
+?> 
+
+EX2: 
+<?php 
+	$add = fn($a, $b) => {
+		$a++; 
+		$b++; 
+		return $a + $b;
+	}
+	echo $add(3, 5); // 12
+?>

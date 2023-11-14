@@ -1,0 +1,29 @@
+Function Variable: 
+<?php
+	
+    function one() {
+        echo "One From function";
+    }
+
+    $fn = 'one'; 
+    $fn();
+?>
+OUPUT: 
+One From function
+
+------------------
+function_exists(): 
+<?php
+    function one() {
+        echo "One From function";
+    }
+
+    if (function_exists('one')) {
+        echo '<br> Yes';
+    }
+    //
+    echo function_exists('one');
+?>
+OUPUT: 
+Yes 
+1

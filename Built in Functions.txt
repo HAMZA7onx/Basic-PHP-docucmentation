@@ -1,0 +1,22 @@
+echo 
+print 
+print_r 
+var_dubm 
+require 
+require_one 
+include
+include_once 
+strcmp 
+strlen
+count
+use  <----connecting variable into new scope in anonymous function 
+globa<----connecting variable into new scope in declaration function
+---------------
+    $string = "apple";
+    $array = str_split($string);    // ['a', 'p', 'p', 'l', 'e']
+---------------
+    $string = "apple,banana";
+    $array = explode(',', $string); // ['apple', 'banana']
+--------------- 
+
+Empty($username)

@@ -1,0 +1,11 @@
+
+code1.php                       code2.php                         code3.php 
+
+$name =  "Hamza";               
+include('code2.php');           include("code3.php");             echo $name;       
+
+
+
+
+localhost/TEST/code1.php: 
+Hamza

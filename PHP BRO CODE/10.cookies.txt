@@ -1,0 +1,30 @@
+// Cookies = Informations about a user stored in a user's web-browser targeted advertisments, Browsing preferences, and other non-sensitive data.
+
+<?php 
+    setcookie('user', 'hamza', time() + 86400, '/');
+?>
+TO DELETE THAT COOKIE ALL WE HAVE TO DO IS SET THE time() to 0 
+
+<?php 
+    setcookie('user', 'hamza', time() - 0, '/');
+?>
+
+
+
+
+
+
+
+<?php 
+    setcookie('user1', 'hamza', time() + 86400*2, '/');
+    setcookie('user2', 'anas', time() + 86400*2, '/');
+    setcookie('user3', 'safa', time() + 86400*2, '/');
+    
+    foreach($_COOKIE as $key => $value) {
+        echo "$key = $value <br>";
+    }
+?>
+OUPUT: 
+user1 = hamza
+user2 = anas
+user3 = safa

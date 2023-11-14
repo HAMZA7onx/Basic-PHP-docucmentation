@@ -1,0 +1,23 @@
+
+==    Equal 
+!=    Not Equal 
+<>    Not Equal 
+===   Identical
+!==   Not Identical<
+<=>   Spaceship Operator it works exacly like strcmp(), It return 3 values (0, 1, -1)
+
+Example: 
+<?php
+        $a = 2;
+    	$b = '2'; 
+
+        // Loose Equality Operator: 
+        if ($a == $b) echo "Hello World"; // Hello World
+
+        // Strict Equality Operator:
+        if ($a === $b) echo "Hello World";// 
+?>
+
+ 
+// strcmp() function return 3 values (0, 1, -1)
+	echo strcmp('c', 'b'); <- 1 because that ASCII of c is bigger than of b.

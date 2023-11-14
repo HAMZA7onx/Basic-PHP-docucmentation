@@ -1,0 +1,11 @@
+<?php
+    function sum($a, $b):int {
+        return $a + $b;
+    }
+
+    echo sum(1.1, 2).'<br>'; 
+    echo gettype(sum(1.1, 2));
+?>
+OUTPUT: 
+3 
+integer

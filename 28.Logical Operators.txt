@@ -1,0 +1,7 @@
+
+	and => And => Two Are True
+	&&  => And => Two Are True
+	or  => Or  => One Or Both is True
+	||  => Or  => One Or Both is True
+	xor => Xor => One is True But Not Both
+	!   => Not

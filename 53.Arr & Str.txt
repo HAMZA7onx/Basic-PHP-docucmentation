@@ -1,0 +1,13 @@
+<?php
+	// implode function:
+	$arr = [1, 2, 3]; 
+	echo implode(" & ",$arr);   // 1 & 2 & 3
+
+	// explode function: 
+	$str = "hamza meski";
+	print_r(explode(" ", $str)); // ['hamza', 'meski'];
+
+	// parse_str("name=hamza&age=22", $query); 
+	print_r($query);             // {name => hamza, age => 22}
+?>
+

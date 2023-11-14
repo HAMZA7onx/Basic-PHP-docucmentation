@@ -1,0 +1,23 @@
+
+/*
+-Variable Arguments List 
+	func_num_args()
+	func_get_arg(index)
+	func_get_args()
+
+	Spread Syntaxe In JS 
+*/
+
+<?php 
+	function calculate() {
+		echo func_num_args();
+		echo func_get_arg(3);
+		print_r(func_get_args());
+	}
+	calculate(10, 20, 50, 30, 40);
+?>
+OUPUT 
+5
+30
+Array ( [0] => 10 [1] => 20 [2] => 50 [3] => 30 [4] => 40 )
+ 

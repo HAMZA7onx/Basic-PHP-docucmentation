@@ -1,0 +1,6 @@
+<?php
+    $a = 'Osama'; 
+    $b = &$a; 
+    $b = "on"; 
+    echo $a;  // on
+?>

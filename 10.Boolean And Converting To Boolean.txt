@@ -1,0 +1,18 @@
+<?php 
+    var_dump((bool) '');         // bool(flase)
+    echo '<br>';
+    var_dump((bool) 0);          // bool(flase)
+    echo '<br>';
+    var_dump((bool) '0');        // bool(flase)
+    echo '<br>';
+    var_dump((bool) array());    // bool(flase)
+    echo '<br>';
+    var_dump((bool) []);         // bool(flase)
+    echo '<br>';
+    var_dump((bool) 'string');   // bool(true)
+    echo '<br>';
+    var_dump((bool) -1);          // bool(true)
+    echo '<br>';
+    var_dump((bool) [1, 2, 3]);  // bool(true)
+?>
+

@@ -1,0 +1,21 @@
+----& in a function:--------
+<?php
+    function ptr(&$number) {
+        $number = 22;
+    }
+
+    $myNumber = 1; 
+    ptr($myNumber); 
+    echo $myNumber; 
+?>
+OUTPUT: 
+22; 
+
+----------------------------
+<?php 
+    $n1 = 1; 
+    $ptr = &$n1; 
+    $ptr = 22; 
+?>
+OUTPUT: 
+22

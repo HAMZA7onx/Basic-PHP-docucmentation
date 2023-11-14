@@ -1,0 +1,28 @@
+// In PHP, you can cast or convert data types explicitly using various type-casting functions or operators. Here are some examples of type casting in PHP:
+
+1. Integer Casting: 
+	$floatNumber = 1.5;
+	$intNumber = (int)$floatNumber + (int)$floatNumber; // $intNumber will be 2
+	$intNumber = (int)($floatNumber + $floatNumber);    // $intNumber will be 3
+
+2. Float Casting: 
+	$stringNumber = "3.14";
+	$floatNumber = (double)$stringNumber; // $floatNumber will be 3.14
+					  | 
+					float <- We can use double or float keyWord.
+
+3. String Casting: 
+	$number = 42;
+	$stringNumber = (string)$number; // $stringNumber will be "42"
+
+4. Boolean Casting:
+	$value = "true";
+	$booleanValue = (bool)$value; // $booleanValue will be true (a boolean)
+
+5. Array Casting: 
+	$item = "example";
+	$array = (array)$item; // $array will be an array with one element: ["example"]
+
+6. Object Casting: 
+	$data = ["name" => "John", "age" => 30];
+	$object = (object)$data; // $object will be an object

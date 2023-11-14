@@ -1,0 +1,37 @@
+In PHP, there are several predefined variables that are available for use in your scripts. These variables contain information about the server, the client, and the environment in which the PHP script is running. Here are some of the commonly used predefined variables in PHP:
+
+$_GET: An associative array containing data sent to the script via HTTP GET method. It is often used to retrieve data from query parameters in the URL.
+
+$_POST: An associative array containing data sent to the script via HTTP POST method. It is used for processing form submissions and other data sent in the request body.
+
+$_REQUEST: An associative array containing data from both the $_GET and $_POST arrays. It can be used to access data from both GET and POST requests, but it's important to use it carefully to avoid security issues.
+
+$_SESSION: An associative array used to store session variables that persist across multiple pages during a user's session. It allows you to store and retrieve user-specific data.
+
+$_COOKIE: An associative array containing cookies sent by the client's browser. Cookies are typically used for storing small pieces of data on the client side.
+
+$_SERVER: An associative array containing information about the server and the request. It includes details such as server information, client information, and request headers.
+
+$_ENV: An associative array containing the environment variables of the server or system. These variables can be useful for accessing system-level information.
+
+$_FILES: An associative array containing data about file uploads. It is used when handling file uploads via HTML forms.
+
+$_GLOBALS: An associative array containing all global variables. Variables in this array are accessible from anywhere in the script.
+
+**$GLOBALS: A superglobal that allows you to access global variables from within a function or method.
+
+**$argv and $argc: Variables containing command-line arguments passed to a PHP script when it's executed from the command line interface (CLI).
+
+
+
+
+
+
+
+
+
+
+<form action="" method="post">
+	<input type="text" name="username">
+	<input type="submit" value="send">
+</form>

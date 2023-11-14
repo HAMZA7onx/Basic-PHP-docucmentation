@@ -1,0 +1,6 @@
+=>include() function it includes the the file into the current file So it is like a part from it, 
+=>header() function it take us into a new file whichs the parametre
+ 
+Example: 
+inlclude('part.php'); 
+header('Location: new_page.php');

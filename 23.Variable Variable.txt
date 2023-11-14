@@ -1,0 +1,16 @@
+<?php
+    $name = 'Hamza';
+    $$name = 'Meski'; 
+    echo $Hamza;
+    $$$name = 'ABDELMAJID'; 
+    echo $Meski;
+    $$$$name = 'ok'; 
+    echo $ABDELMAJID;
+?>
+OUTPUT: 
+MeskiABDELMAJIDok
+
+.MULTIPLE DOLLAR SIGNS INSIDE DOUBLE QUOTES:
+	echo "Hello $$$name";   // Hello $$Hamza
+	echo "Hello ${$$name}"; // Hello ABDELMAJID 
+ 

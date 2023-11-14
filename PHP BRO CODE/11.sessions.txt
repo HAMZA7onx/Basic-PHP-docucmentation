@@ -1,0 +1,25 @@
+
+	Sessions = SGB to store information on a user 
+		   to be used across multiple pages. 
+		   A user is assigned a session-id 
+	           ex. Login credentials
+	On facebook for example you can visit different pages and still login on that site. 
+
+...................................
+index.php: 
+<?php 
+    session_start();
+    echo $a = 1; 
+    $_SESSION['a'] = 1;
+    header('Location: home.php'); 
+?>
+...................................
+home.php:
+<?php 
+    session_start();
+    echo $_SESSION['a'].'<br>'; --> 1
+    session_destroy(); <......................................ends the session and removes the session data on the server at the same time.
+?>
+...................................
+
+session_start(); must be at the top of code before when setting value into $_SESSION array.

@@ -1,0 +1,20 @@
+<form action="index.php" method="POST">
+    <input type="radio" name="credit_card" value="Visa">
+    <span>Visa</span><br>
+    <input type="radio" name="credit_card" value="MasterCard">
+    <span>MasterCard</span><br>
+    <input type="radio" name="credit_card" value="America">
+    <span>America</span><br>
+    <input type="submit" name="click" value="select">
+</form>
+
+<?php 
+    print '<pre>';
+    print_r($_POST);
+    print '</pre>';
+    if (isset($_POST['click']) && isset($_POST['credit_card'])) {
+        echo "You Did Select the {$_POST['credit_card']} <br>";
+    }else {
+        echo 'You did not select any thing';
+    }
+?>

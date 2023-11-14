@@ -1,0 +1,7 @@
+// Prefix Increment (++$i): 
+	$i = 5;
+	$j = ++$i; // $j will be 6, $i is now 6
+
+// Postfix Increment (++$i): 
+	$i = 5;
+	$k = $i++; // $k will be 5, $i is now 5

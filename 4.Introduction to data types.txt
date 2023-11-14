@@ -1,0 +1,33 @@
+// Data Types: 
+.bool => Boolean 
+.int  => Integer 
+.float=>  In PHP, there is no distinct "float" data type. Instead, floating-point numbers are represented as "double."
+.string 
+.null
+.array 
+.object
+.Other Types 
+.gettype()
+
+// Example: 
+.First Method:
+<?php 
+    $name = 'hamza'; 
+    print($name);
+    print('<br>');
+    print(gettype($name)); 
+?>
+.OUTPUT: 
+hamza 
+string
+
+.Second Method:
+<?php 
+    $name = 'hamza'; 
+    echo $name;
+    echo '<br>';
+    echo gettype($name); 
+?>
+.OUTPUT: 
+hamza 
+string

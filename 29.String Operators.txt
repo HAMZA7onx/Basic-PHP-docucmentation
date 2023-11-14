@@ -1,0 +1,30 @@
+<?php 
+	define('NAME', 'HAMZA'); 
+	$age = 22; 
+
+	echo "{$age} ". NAME; // 22 HAMZA
+	              | 
+	            Concatination is usefull in that's Case
+	            Because We Can Not get access into Constants 
+	            If we put them inside Quotes.
+
+
+
+
+
+	$a = 1; 
+	$b = 3; 
+	echo "$a $b";     //13
+	echo "{$a} {$b}"  //13 
+
+
+	$x  = 'a'; 
+	$x .= 'b'; 
+	$x .= 'c'; 
+	echo $x;   // abc
+
+
+	$x  = 1; 
+    $x .= 2; 
+    $x .= 3; 
+    var_dump($x);   // string(3) "123"

@@ -1,0 +1,13 @@
+<?php
+    $name = "Ossama"; 
+    print "hello $name"; // hello Ossama
+?>
+
+<?php
+    $name = "Ossama"; 
+    print 'hello $name'; // hello $name
+?>
+
+Conclusion: 
+    We can say as a conclusion that `Double Quotes` works like `Heredoc`
+    and `Single Quotes` works like `Nowdoc`

@@ -1,0 +1,11 @@
+
+<form action="<?php $_SERVER['PHP_SELF'] ?>">
+    <label>UserName</label><br>
+    <input type="text" name="username"><br>
+    <input type="submit" name="login"><br>
+</form>
+
+<?php 
+    $username = @$_GET['username']; 
+    echo $username;
+?>

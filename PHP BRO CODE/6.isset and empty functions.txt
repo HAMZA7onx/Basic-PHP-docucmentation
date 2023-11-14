@@ -1,0 +1,3 @@
+
+	isset() = Returns TRUE if a variable is declared and initialized a condition that initialization is not null.
+	empty() = Returns TRUE if a variable is not declared, false, null, ""

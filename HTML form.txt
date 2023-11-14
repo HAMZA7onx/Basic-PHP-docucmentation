@@ -1,0 +1,56 @@
+contactform.php: 
+<!-- HTML CODE -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form {
+            display: flex; 
+            flex-direction: column; 
+            align-items: start;
+            gap: .5rem;
+        }
+        .textArea {
+            width: 50%;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <p>SEND E-MAIL</p>
+    <form action="index.php" method="post" class="form">
+        <input type="text" name="name" placeholder="Full Name">
+        <input type="text" name="mail" placeholder="Your e-mail">
+        <input type="text" name="subject" placeholder="Subject">
+        <textarea type="text" name="message" placeholder="Message" class="textArea"></textarea>
+        <button type="submit" name="submit" placeholder="Full Name">SEND MAIL</button>
+    </form>
+</body>
+</html>
+
+------------------------------------------------------------------------------------------------------
+
+index.php: 
+<!-- PHP CODE -->
+<?php 
+    // Data Come From Here:
+    include('contactform.php');
+    echo str_repeat('<br>', 7); 
+
+    // Will be treat here:
+    if (isset($_POST['submit'])) {
+        $name    = $_POST['name'];
+        $mailFrom    = $_POST['mail'];
+        $subject = $_POST['subject'];
+        $message = $_POST['message'];
+
+        // Display Here: 
+        echo $name . '<br>';
+        echo $mailFrom . '<br>';
+        echo $subject . '<br>';
+        echo $message . '<br>';
+    }
+?>

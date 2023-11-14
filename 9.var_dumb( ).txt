@@ -1,0 +1,6 @@
+<?php 
+    $name = "hamza"; 
+    var_dump($name); // string(5) "hamza"
+?>
+
+// var_dumb() function print that data and give us informations about it.

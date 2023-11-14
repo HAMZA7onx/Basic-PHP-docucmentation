@@ -1,0 +1,4 @@
+// How to live server php -> 
+1. Enable liver server extention on the browser 
+2. Live server the project folder in vsCODE
+3. Set to that extention the necessary configuration and apply them

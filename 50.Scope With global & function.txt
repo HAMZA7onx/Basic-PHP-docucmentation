@@ -1,0 +1,24 @@
+To connect a variable into a declaration function scop we use `use()` function. 
+To connect a variable into an Anonymous function scop we use `global` pre-defined data type. 
+
+
+// USE() in ANONYMOUS FN:
+<?php
+    // Anonymous function: 
+    $Hey2 = function() use($msg) {
+        echo "$msg <br>";
+    }; 
+    $Hey2();
+?>
+
+
+// GLOBAL in DECLARATION FN:
+<?php 
+    $msg = 'HI'; 
+    // Declaration function: 
+    function Hey1() {
+        global $msg;
+        echo "$msg <br>";
+    }
+    Hey1();
+?>

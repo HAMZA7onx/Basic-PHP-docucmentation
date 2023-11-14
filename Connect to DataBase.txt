@@ -1,0 +1,16 @@
+// Connect to DataBase: 
+
+//(1) Send Input Informations into DataBase:
+<?php 
+    // 1st step:
+    $connect = mysqli_connect('localhost', 'root', '', 'firstdb'); 
+    // 2nd step:
+    $sql = "INSERT INTO users(firstName, lastName, email) VALUES('$fname', '$lname', '$mail')";
+    // 3th step:
+    mysqli_query($connect, $sql);
+?>
+
+//(2) Select Data from DataBase:
+
+Empty
+header

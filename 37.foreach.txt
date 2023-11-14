@@ -1,0 +1,26 @@
+<?php
+    $numbers = [1, 2, 3, 4]; 
+
+    foreach($numbers as $el) { <------------------------------- We can set just the value.
+        echo "$el <br>";
+    }
+?>
+OUTPUT: 
+1
+2
+3
+4
+
+------------------------------
+<?php
+    $numbers = [1, 2, 3, 4];
+
+    foreach($numbers as $key => $value) { <-------------------- We can set the Key and the Value.
+        echo "$key is $value <br>";
+    }
+?>
+OUTPUT: 
+0 is 1
+1 is 2
+2 is 3
+3 is 4

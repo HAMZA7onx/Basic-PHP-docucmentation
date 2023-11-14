@@ -1,0 +1,21 @@
+<?php
+    function hey($birthYear = 2000) {
+        return 2023 - $birthYear;
+    }
+
+    $age = hey();
+    echo "My Name Is hamza I am $age Years Old<br>";
+    echo null;
+?>
+OUPUT: 
+My Name Is hamza I am 23 Years Old
+
+----------------------------------------------------
+<?php 
+    function get_data($first = 'def1', $second = 'def2', $third = 'def3') {
+        echo "$first, $second, $third <br>";
+    }
+    get_data(third: "value");
+?>
+OUTPUT: 
+    def1, def2, value

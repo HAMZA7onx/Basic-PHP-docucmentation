@@ -1,0 +1,15 @@
+Minus(-) and Plus(+) Operator to convert a string;
+<?php
+    echo -"-100";
+    echo "<br>";
+    echo +"101"; 
+    echo "<br>";
+    echo gettype(-"100");
+?>
+OUTPUT: 
+100     <-number
+101     <-number 
+integer
+
+
+NOTE: The String that we gonna cast with `+` and `-` operators must be a number not a characters, Because it does't work like (int) caster.

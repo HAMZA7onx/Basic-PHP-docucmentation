@@ -1,0 +1,20 @@
+
+(1)=>include and require:
+include and require have the same role, But There is a distinction between:
+`include()` it includes another file in the project folder to the current file, if the included file exist everything gonna work as excepted, If that file 		not exist it displays a warning but the current file continue working. 
+
+`require()` The same thing but if the included file not exist it displays a warning and it ends the program.
+
+
+
+(2)=>include_once and require_once: 
+<?php                                      code2.php: 
+    include_once("code2.php");             $a = 1;
+    echo "$a <br>";           //1
+    $a = 2; 
+    include_once("code2.php"); <------------------------------ so include_once here doesn't work because It already includes that file.
+    echo "$a <br>";           //2
+?>
+
+
+include_once() and require_once() work as we explained before.

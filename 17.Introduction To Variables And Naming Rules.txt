@@ -1,0 +1,13 @@
+/* 
+	Variables 
+	- Naming Rules + Info
+	[1] Start with dollar sign $ 
+	[2] Start with A letter [a-z] or [A-Z] or Underscore 
+	[3] You can use Numbers inside the name 
+	[4] No Special characters allowed 
+	[5] Case sensitive 
+	- Test Signal and Double Quotes 
+
+	Search 
+	- Loosely Typed Language  
+*/

@@ -1,0 +1,4 @@
+$arr = ['Morocco' => 'Safi', 'Algeria' => 'Wehran']; 
+
+$newArr = array_keys($arr); -> [Morocco, Algeria]; 
+$newArr = array_values($arr); -> [Safi, Wehran]; 

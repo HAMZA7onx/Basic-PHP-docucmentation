@@ -1,0 +1,26 @@
+
+HASHING = Transforming sensitive data (password) 
+	  into letters, numbers, and/or symboles
+  	  via a mathematical process. (Similar to encryption)
+	  Hides the original data from 3rd parties.
+
+
+<?php 
+    $password = password_hash('1234', PASSWORD_DEFAULT);
+    echo $password;
+?>
+OUTPUT: 
+$2y$10$OkGIGJGCez8dJ927E9xbFukHilsD9UINnBqG.dPLLpZRC/L1P8uFG
+
+............................................................
+<?php 
+    $password = '1234';
+    $hash = password_hash($password, PASSWORD_DEFAULT);
+    if (password_verify('1234', $hash)) {
+        echo 'You get Access';
+    }
+?>
+
+
+
+>>>>>> We Hash passwords when Before storing them into database throught queries.

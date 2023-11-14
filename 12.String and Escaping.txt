@@ -1,0 +1,23 @@
+<?php 
+    echo 'Hello \'PHP\' end'; // Hello 'PHP' end
+?>               |    |
+                 We add \ before '
+
+ <?php 
+    echo "Hello \"PHP\" end"; // Hello "PHP" end
+    echo "Hello PHP\\";       // Hello PHP\
+    echo "Hello PHP\";  	  // Parse error: syntax error, unexpected end of file, expecting variable or "${" or "{$" 
+?>
+
+<?php 
+    echo "Hello PHP
+    ok there is no         // Hello PHP ok there is no problem.
+    problem."; 
+
+    echo '<br>'; 
+    echo nl2br("Hello PHP  // Hello PHP
+        ok there is no     // ok there is no
+        problem.");        // problem.
+?>
+
+nl2br() function <-

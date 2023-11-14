@@ -1,0 +1,55 @@
+The `isset()` function in PHP is used to determine whether a variable is set and is not NULL. It returns `true` if the variable exists and is not set to `null`, and `false` if the variable is not set or is explicitly set to `null`. 
+
+Here's the basic syntax of `isset()`:
+
+```php
+isset($variable);
+```
+
+- `$variable` is the variable you want to check.
+
+Here are some common use cases for `isset()`:
+
+1. **Checking if a Variable Exists:** You can use `isset()` to determine if a variable has been defined.
+
+   ```php
+   $name = "John";
+   if (isset($name)) {
+       echo "The variable is set.";
+   } else {
+       echo "The variable is not set.";
+   }
+   ```
+
+2. **Form Data Validation:** It's often used to check if form input data exists and is not `null` before processing it.
+
+   ```php
+   if (isset($_POST['username'])) {
+       // Process the username from the form
+   }
+   ```
+
+3. **Checking if Array Keys Exist:** `isset()` can be used to check if a specific key exists in an array.
+
+   ```php
+   $data = ['name' => 'Alice', 'age' => 30];
+   if (isset($data['name'])) {
+       // The 'name' key exists in the array.
+   }
+   ```
+
+4. **Checking for the Existence of Class Properties:** It's used to check if a property exists within an object.
+
+   ```php
+   class MyClass {
+       public $property;
+   }
+
+   $obj = new MyClass();
+   if (isset($obj->property)) {
+       // The property exists in the object.
+   }
+   ```
+
+It's important to note that `isset()` returns `false` not only for variables that are explicitly set to `null` but also for variables that have not been defined or have been unset. 
+If you want to check if a variable is defined and not `null`, `isset()` is a suitable choice. However, if you specifically want to check if a variable is not `null`, you can use the `!==` operator to compare against `null`.

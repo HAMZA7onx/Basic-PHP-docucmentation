@@ -1,0 +1,40 @@
+<form action="index.php" method="POST">
+    <input type="checkbox" name="food[]" value="Pizza">
+    <span>Pizza</span><br>
+    <input type="checkbox" name="food[]" value="Hotdog">
+    <span>Hotdog</span><br>
+    <input type="checkbox" name="food[]" value="Taco">
+    <span>Taco</span><br>
+    <input type="submit" name="food[]" value="select">
+</form>
+
+<?php 
+    print '<pre>';
+    print_r($_POST);
+    print '</pre>';
+
+    $food = $_POST['food']; 
+    print '<pre>';
+    print_r($food);
+    print '</pre>';
+?>
+
+OUTPUT:
+Array
+(
+    [food] => Array
+        (
+            [0] => Pizza
+            [1] => Hotdog
+            [2] => Taco
+            [3] => select
+        )
+
+)
+Array
+(
+    [0] => Pizza
+    [1] => Hotdog
+    [2] => Taco
+    [3] => select
+)

@@ -1,0 +1,6 @@
++  Addiction
+-  Substraction
+*  Multiplication
+/  Division
+%  Modulus
+** Power

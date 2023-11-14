@@ -1,0 +1,27 @@
+String Functions: 
+<?php
+	lcfirst('HAMZA')           		-> hAMZA
+	ucfirst('hamza');          		-> Hamza 
+	strtolower('HAMZA');       		-> hamza
+	strtoupper('hamza');       		-> HAMZA
+	ucwords('hamza meski');         -> Hamza Meski
+	str_repeat('hamza', 2);    		-> hamzahamza
+	str_split('hamza');        		-> ['h', 'a', 'm', 'z', 'a']
+	str_split('hamza', 2);        	-> ['ha', 'mz', 'a']
+    explode(';', 'apple;banana');   -> ['apple', 'banana']
+    implode(' ', ['I am', 'Hamza', 'Meski'] -> I am Hamza Meski
+    str_shuffle('hamza');           -> hazma mzaah ... (each refresh new combinition)
+    strrev('meski'); 				-> iksem
+    trim(' hamza meski ')           -> hamza meski (1st and last spaces are removed)
+    ltrim(' hamza ')      			-> hamza (Only 1st space is removed);        
+    rtrim(' hamza ')      			-> hamza (Only last space is removed);
+    nl2br("hamza\nmeski") 			-> hamza 
+    								   meski
+    strpos("hamza\nmeski", 'eski')  -> 7
+
+	str_replace("World", "PHP", "Hello, World!"); -> Hello, PHP!
+
+	substr("Hello, World!", 0, 5);  -> Hello
+	str_pad('1', 4, 0, STR_PAD_LEFT); -> 0001
+	
+?>

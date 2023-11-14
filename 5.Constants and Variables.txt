@@ -1,0 +1,15 @@
+// Declaring a Constant with define() function:
+<?php 
+    define('PI', 3.14);
+    echo PI; // 3.14
+
+    define('NAME', 'hamza');
+    echo NAME; // hamza
+?> 
+
+// Declaring a Variable:
+<?php 
+    $name = 'string'; 
+    $name = 'str';
+    echo $name; // str
+?>
